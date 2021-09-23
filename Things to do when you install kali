@@ -1,0 +1,19 @@
+First if you are using VMachine
+configure network setting in your virtual machine go to settings network advanced, change from NAT to bridge Adapter and you choose a wireless one or ethernet one.
+change time zone to be same as the real time clock, on the top right of your kali linux there is clock ,right click it and choose properties ,write down your timezone and you good to go
+now open your terminal and type the following commands that will configure your kali linux
+sudo nano /etc/apt/sources.list
+the results you will get add an "s" to all http you are seeing,at the #deb-src http://http.kali.org/kali remove the # symbol and press CTRL+X and Y then ENTER
+write down the following commands in your terminal
+sudo apt install apt-transport-https   //and press ENTER
+sudo apt update && sudo apt upgrade    //and press ENTER.. this will take a long time be patient
+sudo apt install git  //this will install git
+sudo apt install tor  //this will install tor
+sudo apt install torbrowser-launcher //and press ENTER
+sudo apt install tilix  //this will install terminal multiplexer will allow you to split terminal as many as you want
+sudo apt install metasploit-framework  //this will install metasploit
+sudo apt install set  //will install social engineering
+sudo apt install cmatrix  //this will install CMATRIX
+
+sudo apt update
+sudo apt install sqlmap  //this will install sqlmap
